@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "deploy": "git subtree push --prefix docs origin gh-pages"
+    "predeploy": "npm run build",
+    "deploy": "git subtree push --prefix docs origin gh-pages",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/DelChaRay/portfoliov2/issues"
   },
-  "homepage": "https://github.com/DelChaRay/portfoliov2#readme",
+  "homepage": "https://delcharay.github.io/portfoliov2",
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
@@ -26,6 +28,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^3.2.3",
     "parcel-bundler": "^1.10.3"
   },
   "dependencies": {
