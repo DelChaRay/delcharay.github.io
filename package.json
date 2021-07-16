@@ -8,8 +8,8 @@
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "predeploy": "npm run build",
-    "deploy": "git subtree push --prefix docs origin gh-pages",
-    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose",
+    "originaldeploy": "git subtree push --prefix docs origin gh-pages"
   },
   "repository": {
     "type": "git",
