@@ -9,7 +9,7 @@
     "firstinstall": "npm ci",
     "build": "parcel build src/index.html",
     "cname": "echo 'www.raymondchau.dev' > dist/CNAME",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && npm run cname",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "repository": {
