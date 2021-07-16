@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/DelChaRay/portfoliov2/issues"
   },
-  "homepage": "https://delcharay.github.io/portfoliov2/",
+  "homepage": "./",
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
